@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+section {
+  padding: 40px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  width: 55rem;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bgImg {
+  position: relative;
+  padding: 15px 30px 30px 30px;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bgImg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.6;
+  min-height: 450px;
+  background-image: url("./images/mountain.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+li {
+  list-style-type: none;
+  letter-spacing: 0.6px;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid #f7f7f7;
+  margin-right: 7px;
+  padding-left: 10px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7;
+}
+
+.searchButton {
+  background-color: #ff6961;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.searchButton:hover {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tempButton {
+  background-color: #ff6961;
+  color: white;
+}
+
+.tempButton:hover {
+  color: white;
+}
+
+h1, h2, p, span, li {
+  color: #454545;
+}
+
+.weatherSection {
+  padding-top: 30px;
+  width: 70%;
+  margin: auto;
+}
+
+span {
+  vertical-align: bottom;
+}
+
+.lead {
+  margin: 0;
+}
+
+.descriptiveTxt {
+  font-size: 14px;
+}
+
+.leadTxt {
+  font-size: 22px;
 }
